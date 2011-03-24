@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.5'
 gem 'mysql2'
 gem 'devise', '1.2.rc2'
+gem 'haml', '3.0.25'
 
 group :test, :development do
   gem 'nifty-generators'

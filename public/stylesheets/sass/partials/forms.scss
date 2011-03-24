@@ -1,0 +1,26 @@
+form {
+  label {
+    display:block;
+    padding: 4px 0 4px 2px;
+    &.checkbox {
+      display:inline;
+    }
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    margin-top:2px;
+    margin-bottom:6px;
+    border:none;
+    padding:5px;
+    background: #fff;
+    @include rounded(4px);   
+    @include shadow(5px, #999);  
+    color: #222;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5); 
+    &:focus {
+      @include shadow(5px, #333);
+    }
+  }
+}
