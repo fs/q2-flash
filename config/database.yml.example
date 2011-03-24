@@ -1,0 +1,22 @@
+defaults: &defaults
+  adapter: mysql2
+  encoding: utf8
+  database: q2_development
+  host: localhost
+  username: root
+  password: root
+
+production:
+  database: q2_production
+  <<: *defaults
+
+development:
+  <<: *defaults
+
+test:
+  database: q2_test
+  <<: *defaults
+
+cucumber:
+  database: q2_test
+  <<: *defaults

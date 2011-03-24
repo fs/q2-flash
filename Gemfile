@@ -1,10 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.4'
+gem 'rails', '3.0.5'
 gem 'mysql2'
-gem 'devise', '1.1.2'
+gem 'devise', '1.2.rc2'
 
-group :test do
+group :test, :development do
+  gem 'nifty-generators'
   gem 'cucumber', '0.10.0'
   gem 'cucumber-rails', '0.3.2'
   gem 'capybara', :git => 'git://github.com/antonr/capybara.git'
