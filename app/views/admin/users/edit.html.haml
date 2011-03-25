@@ -1,0 +1,13 @@
+- title 'Edit user'
+= form_for @user, :url => admin_user_path(@user) do |form|
+  %p
+    = form.label :email
+    = form.text_field :email
+  %p
+    = form.label :password
+    = form.text_field :password
+  %p
+    = form.label :password_confirmation
+    = form.text_field :password_confirmation
+  %p
+    = form.submit 'Update'

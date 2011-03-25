@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'rounded'.
-        on line 34 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss, in `rounded'
-        from line 34 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss
+        on line 35 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss, in `rounded'
+        from line 35 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss
 
-29:   width: 900px;
 30:   margin: 0 auto;
 31:   background-color: #eee;
 32:   padding: 20px 40px;
 33:   margin-top: 20px;
-34:   @include rounded(10px);
-35:   @include shadow(10px, #555);
-36:   @include background-gradient-alpha(.6, 0);
-37: }
-38: 
-39: #flash_notice, #flash_error, #flash_alert {
+34:   min-height:300px;
+35:   @include rounded(10px);
+36:   @include shadow(10px, #555);
+37:   @include background-gradient-alpha(.6, 0);
+38: }
+39: 
+40: #navigation {
 
 Backtrace:
-/var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss:34:in `rounded'
-/var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss:34
+/var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss:35:in `rounded'
+/var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss:35
 /home/gvalmon/.rvm/gems/ree-1.8.7-2011.03@q2/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /home/gvalmon/.rvm/gems/ree-1.8.7-2011.03@q2/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /home/gvalmon/.rvm/gems/ree-1.8.7-2011.03@q2/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -101,4 +101,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'rounded'.\A         on line 34 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss, in `rounded'\A         from line 34 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss\A \A 29:   width: 900px;\A 30:   margin: 0 auto;\A 31:   background-color: #eee;\A 32:   padding: 20px 40px;\A 33:   margin-top: 20px;\A 34:   @include rounded(10px);\A 35:   @include shadow(10px, #555);\A 36:   @include background-gradient-alpha(.6, 0);\A 37: }\A 38: \A 39: #flash_notice, #flash_error, #flash_alert {"; }
+  content: "Syntax error: Undefined mixin 'rounded'.\A         on line 35 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss, in `rounded'\A         from line 35 of /var/apps/Q2-Flash/public/stylesheets/sass/partials/layout.scss\A \A 30:   margin: 0 auto;\A 31:   background-color: #eee;\A 32:   padding: 20px 40px;\A 33:   margin-top: 20px;\A 34:   min-height:300px;\A 35:   @include rounded(10px);\A 36:   @include shadow(10px, #555);\A 37:   @include background-gradient-alpha(.6, 0);\A 38: }\A 39: \A 40: #navigation {"; }

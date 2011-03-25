@@ -31,9 +31,18 @@ a {
   background-color: #eee;
   padding: 20px 40px;
   margin-top: 20px;
+  min-height:300px;
   @include rounded(10px);
   @include shadow(10px, #555);
   @include background-gradient-alpha(.6, 0);
+}
+
+#navigation {
+  a {
+    color:#333;
+    font-size:16px;
+    padding-right:8px;
+  }
 }
 
 #flash_notice, #flash_error, #flash_alert {

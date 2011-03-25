@@ -109,6 +109,7 @@ a {
   background-color: #eee;
   padding: 20px 40px;
   margin-top: 20px;
+  min-height: 300px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -117,6 +118,11 @@ a {
   box-shadow: 0px 0px 10px #555555;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)); }
+
+#navigation a {
+  color: #333;
+  font-size: 16px;
+  padding-right: 8px; }
 
 #flash_notice, #flash_error, #flash_alert {
   padding: 5px 8px;
@@ -153,3 +159,27 @@ a {
     margin: 8px 10px; }
   .error_messages ul {
     margin: 0; }
+
+/* Users
+-------------------------------------------------------------------*/
+#users tr {
+  font-size: 16px;
+  border-bottom: 1px solid #444;
+  border-top: 1px solid #444; }
+  #users tr:hover {
+    background: #C3D9FF; }
+  #users tr td {
+    padding: 10px; }
+    #users tr td.email {
+      font-size: 18px; }
+    #users tr td.controls {
+      text-align: right; }
+      #users tr td.controls a {
+        color: #333; }
+
+/* Auth
+-------------------------------------------------------------------*/
+.devise_shared_links a {
+  display: inline-block;
+  color: #000;
+  padding: 3px; }

@@ -1,0 +1,35 @@
+/* Users
+-------------------------------------------------------------------*/
+#users {
+  tr {
+    font-size:16px;
+    border-bottom:1px solid #444;
+    border-top:1px solid #444;
+    &:hover {
+      background:#C3D9FF;
+    }
+    td {
+      padding:10px;
+  
+      &.email {
+        font-size:18px;
+      }
+      &.controls {
+        text-align:right;
+        
+        a {
+          color:#333;
+        }
+      }
+    }
+  }
+}
+/* Auth
+-------------------------------------------------------------------*/
+.devise_shared_links {
+  a {
+    display:inline-block;
+    color:#000;
+    padding:3px;
+  }
+}

@@ -1,0 +1,10 @@
+- title 'Users'
+%table#users
+  - @users.each do |user|
+    %tr
+      %td.email
+        = user.email
+      %td.controls
+        = link_to 'edit', edit_admin_user_path(user)
+        = link_to 'delete', admin_user_path(user), :method => :delete,
+          :confirm => 'Are you sure?'

@@ -1,0 +1,11 @@
+= link_to 'Main', :root
+
+- if user_signed_in? && current_user.role?('admin')
+  = link_to 'Users', :admin_users
+  = link_to 'Settings', :admin_edit_settings
+
+- if user_signed_in?
+  = link_to 'Logout', :destroy_user_session
+
+- else
+  = link_to 'Login', :new_user_session
