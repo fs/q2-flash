@@ -10,16 +10,16 @@
       = devise_error_messages!
       .form-body
         .row
-          %input{ :type => 'text', :value => 'First name', :class => 'required' }
-          %input{ :type => 'text', :value => 'Title' }
+          %input{ :type => 'text', :value => 'First name', :class => 'required', :onblur => "if (this.value == '') {this.value = 'First name'}", :onfocus => "if (this.value == 'First name') {this.value = '';}" }
+          %input{ :type => 'text', :value => 'Title', :onblur => "if (this.value == '') {this.value = 'Title'}", :onfocus => "if (this.value == 'Title') {this.value = '';}" }
         .row
-          %input{ :type => 'text', :value => 'Last name', :class => 'required' }
-          %input{ :type => 'text', :value => 'E-mail', :class => 'required' }
+          %input{ :type => 'text', :value => 'Last name', :class => 'required', :onblur => "if (this.value == '') {this.value = 'Last name'}", :onfocus => "if (this.value == 'Last name') {this.value = '';}" }
+          %input{ :type => 'text', :value => 'E-mail', :class => 'required', :onblur => "if (this.value == '') {this.value = 'E-mail'}", :onfocus => "if (this.value == 'E-mail') {this.value = '';}" }
         .row
-          %input{ :type => 'text', :value => 'Financial Institution ', :class => 'required' }
-          %input{ :type => 'text', :value => 'Phone' }
+          %input{ :type => 'text', :value => 'Financial Institution', :class => 'required', :onblur => "if (this.value == '') {this.value = 'Financial Institution'}", :onfocus => "if (this.value == 'Financial Institution') {this.value = '';}" }
+          %input{ :type => 'text', :value => 'Phone', :onblur => "if (this.value == '') {this.value = 'Phone'}", :onfocus => "if (this.value == 'Phone') {this.value = '';}" }
         .row.textarea
-          %textarea
+          %textarea{ :onblur => "if (this.value == '') {this.value = 'Comments'}", :onfocus => "if (this.value == 'Comments') {this.value = '';}" }
             Comments
         
       .commented 

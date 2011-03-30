@@ -216,7 +216,7 @@ body {
       #container .sign-up section .intro p,
       #container .sign-up section .form-body p {
         border-bottom: 1px solid #e5e5e5;
-        padding: 0 12px 12px 15px; }
+        padding: 0 12px 10px 15px; }
       #container .sign-up section .intro .row,
       #container .sign-up section .form-body .row {
         overflow: hidden;
@@ -230,18 +230,24 @@ body {
           background: url("../images/signup-input.png") 0 0 no-repeat;
           border: 0;
           width: 242px;
-          height: 18px;
+          height: 16px;
           float: left;
           margin-right: 7px;
           font-size: 12px;
           line-height: 16px;
           text-transform: uppercase;
-          padding: 8px;
+          padding: 9px 8px;
           color: #4a4a4a;
           font-family: 'HelveticaRegular';
           *font-family: 'Helvetica', 'Helvetica Neue';
           font-weight: bold;
           display: block; }
+          #container .sign-up section .intro .row input.required,
+          #container .sign-up section .form-body .row input.required {
+            background: url("../images/signup-input-required.png") 0 0 no-repeat; }
+          #container .sign-up section .intro .row input:focus,
+          #container .sign-up section .form-body .row input:focus {
+            background: url("../images/signup-input.png") 0 0 no-repeat; }
         #container .sign-up section .intro .row.textarea,
         #container .sign-up section .form-body .row.textarea {
           background: url("../images/signup-row-textarea.png") 1px center repeat-x;
@@ -265,7 +271,8 @@ body {
             font-family: 'HelveticaRegular';
             *font-family: 'Helvetica', 'Helvetica Neue';
             font-weight: bold;
-            overflow: hidden; }
+            overflow: hidden;
+            resize: none; }
     #container .sign-up section footer {
       background: url("../images/signup-footer.png") 0 0 no-repeat;
       height: 35px;
@@ -282,4 +289,5 @@ body {
         font-family: 'HelveticaRegular';
         font-size: 12px;
         display: block;
-        margin: 0 auto; }
+        margin: 0 auto;
+        cursor: pointer; }
