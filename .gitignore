@@ -5,5 +5,4 @@ tmp/
 TAGS
 tags
 config/database.yml
-.rvmrc
 Gemfile.lock
