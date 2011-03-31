@@ -1,0 +1,9 @@
+<br/>
+<% @black_domains.each_with_index do |black_domain, i| %>
+  <p>
+    <%= i + 1 %>. <%= black_domain.domain_name %>
+    <%= link_to "Delete", admin_black_domain_path(black_domain), :method => :delete, :confirm => 'Are you sure?'  %>
+  </p>
+<% end %>
+
+<p><%= link_to "Create", new_admin_black_domain_path %></p>

@@ -5,6 +5,7 @@ Q2Flash::Application.routes.draw do
 
   namespace :admin do
     resources :users
+    resources :black_domains, :except => [:show, :update]
     match 'settings' => 'settings#edit', :as => :edit_settings
     match 'settings/update' => 'settings#update', :as => :update_settings
   end
