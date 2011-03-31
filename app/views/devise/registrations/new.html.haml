@@ -10,25 +10,35 @@
       = devise_error_messages!
       .form-body
         .row
-          %input{ :type => 'text', :value => 'First name', :class => 'required', :onblur => "if (this.value == '') {this.value = 'First name'}", :onfocus => "if (this.value == 'First name') {this.value = '';}" }
-          %input{ :type => 'text', :value => 'Title', :onblur => "if (this.value == '') {this.value = 'Title'}", :onfocus => "if (this.value == 'Title') {this.value = '';}" }
+          = f.text_field :first_name, :value => 'First name', :class => 'required automessage'
+          = f.text_field :title, :value => 'Title', :class => 'automessage'
         .row
-          %input{ :type => 'text', :value => 'Last name', :class => 'required', :onblur => "if (this.value == '') {this.value = 'Last name'}", :onfocus => "if (this.value == 'Last name') {this.value = '';}" }
-          %input{ :type => 'text', :value => 'E-mail', :class => 'required', :onblur => "if (this.value == '') {this.value = 'E-mail'}", :onfocus => "if (this.value == 'E-mail') {this.value = '';}" }
+          = f.text_field :last_name, :value => 'Last name', :class => 'required automessage'
+          = f.text_field :email, :value => 'E-mail', :class => 'required automessage'
         .row
-          %input{ :type => 'text', :value => 'Financial Institution', :class => 'required', :onblur => "if (this.value == '') {this.value = 'Financial Institution'}", :onfocus => "if (this.value == 'Financial Institution') {this.value = '';}" }
-          %input{ :type => 'text', :value => 'Phone', :onblur => "if (this.value == '') {this.value = 'Phone'}", :onfocus => "if (this.value == 'Phone') {this.value = '';}" }
+          = f.text_field :financial_institution, :value => 'Financial Institution', :class => 'required automessage'
+          = f.text_field :phone, :value => 'Phone', :class => 'automessage'
+        .row
+          = f.text_field :password, :value => 'Password', :class => 'required automessage'
+          = f.text_field :password_confirmation, :value => 'Password Confirmation', :class => 'required automessage'
         .row.textarea
-          %textarea{ :onblur => "if (this.value == '') {this.value = 'Comments'}", :onfocus => "if (this.value == 'Comments') {this.value = '';}" }
+          %textarea{:id => :user_comments, :class => 'automessage'}
             Comments
-        
-      .commented 
-        = f.email_field :email 
-        = f.password_field :password 
-        = f.password_field :password_confirmation
         
       %footer
         = f.submit "Register"
       
   .commented 
     = render :partial => "devise/shared/links"
+
+:javascript
+  var automessages = [];
+  $(function(){
+    $('.automessage').each(function(){
+      automessages[$(this).attr('id')] = $(this).val();
+    }).focus(function(){
+      if ($(this).val() == automessages[$(this).attr('id')]) { $(this).val('') }
+    }).blur(function(){
+      if ($(this).val() == '') { $(this).val(automessages[$(this).attr('id')]) }
+    });
+  });
