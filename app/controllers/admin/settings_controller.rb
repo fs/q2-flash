@@ -3,10 +3,8 @@ class Admin::SettingsController < ApplicationController
   before_filter :admin_required
 
   def edit
-    
   end
-  
-  def update
 
+  def update
   end
 end
