@@ -1,0 +1,2 @@
+module FlashPageHelper
+end
