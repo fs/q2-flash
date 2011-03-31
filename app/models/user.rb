@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   validate :check_domain_name
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, 
-    :first_name, :last_name, :title, :financial_institution, :phone
+    :first_name, :last_name, :title, :financial_institution, :phone, :role
 
   def role?(role)
     self.role == role
