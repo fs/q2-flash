@@ -1,6 +1,6 @@
 User.create(
   :email => 'admin@example.com', 
-  :password => 'admin',
-  :password_confirmation => 'admin',
+  :password => '123456',
+  :password_confirmation => '123456',
   :role => 'admin'
 )

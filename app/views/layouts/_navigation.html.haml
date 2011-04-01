@@ -2,6 +2,7 @@
 
 - if user_signed_in? && current_user.role?('admin')
   = link_to 'Users', :admin_users
+  = link_to 'Black Domains', :admin_black_domains
   = link_to 'Settings', :admin_edit_settings
 
 - if user_signed_in?
