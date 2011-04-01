@@ -26,7 +26,8 @@ body { background: #fff; }
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    .sign-up {
+    .sign-up,
+    .sign-in {
         width: 550px;
         height: 500px;
         margin: 0 auto;
@@ -104,6 +105,38 @@ body { background: #fff; }
                         }
                         &:focus {
                             background: url("../images/signup-input.png") 0 0 no-repeat;
+                        }
+                    }
+                    label {
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: #4a4a4a;
+                        font-family: 'HelveticaRegular';
+                        *font-family: 'Helvetica', 'Helvetica Neue';
+                        font-weight: bold;
+                        float: left;
+                        text-align: right;
+                        width: 105px;
+                        padding: 9px 8px 9px 21px;                        
+                    }                    
+                    &.remember {
+                        padding-left: 145px;
+                        input {
+                            width: auto;
+                            background: none;
+                        }
+                        label {
+                            font-size: 12px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            color: #4a4a4a;
+                            font-family: 'HelveticaRegular';
+                            *font-family: 'Helvetica', 'Helvetica Neue';
+                            font-weight: bold;
+                            text-align: left;
+                            padding: 1px 0;
+                            width: auto;
                         }
                     }
                     &.textarea {

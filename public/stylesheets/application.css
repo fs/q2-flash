@@ -173,7 +173,8 @@ body {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
-  #container .sign-up {
+  #container .sign-up,
+  #container .sign-in {
     width: 550px;
     height: 500px;
     margin: 0 auto;
@@ -182,20 +183,24 @@ body {
     font-size: 12px;
     line-height: 18px;
     color: #4a4a4a; }
-    #container .sign-up .commented {
+    #container .sign-up .commented,
+    #container .sign-in .commented {
       display: none; }
-    #container .sign-up header {
+    #container .sign-up header,
+    #container .sign-in header {
       background: url("../images/signup-header.png") 0 0 no-repeat;
       height: 82px;
       position: relative; }
-      #container .sign-up header h2 {
+      #container .sign-up header h2,
+      #container .sign-in header h2 {
         position: absolute;
         left: 15px;
         bottom: 10px;
         font-size: 27px;
         line-height: 32px;
         padding: 0; }
-      #container .sign-up header .logo {
+      #container .sign-up header .logo,
+      #container .sign-in header .logo {
         position: absolute;
         right: 16px;
         bottom: 7px;
@@ -204,21 +209,28 @@ body {
         background: url("../images/logo-mini.png") 0 0 no-repeat;
         height: 61px;
         width: 79px; }
-    #container .sign-up section h3 {
+    #container .sign-up section h3,
+    #container .sign-in section h3 {
       font-size: 18px;
       line-height: 24px;
       padding-left: 15px; }
     #container .sign-up section .intro,
-    #container .sign-up section .form-body {
+    #container .sign-up section .form-body,
+    #container .sign-in section .intro,
+    #container .sign-in section .form-body {
       padding: 8px 0 0 0;
       background: url("../images/signup-body.png") 0 0 repeat-y;
       overflow: hidden; }
       #container .sign-up section .intro p,
-      #container .sign-up section .form-body p {
+      #container .sign-up section .form-body p,
+      #container .sign-in section .intro p,
+      #container .sign-in section .form-body p {
         border-bottom: 1px solid #e5e5e5;
         padding: 0 12px 10px 15px; }
       #container .sign-up section .intro .row,
-      #container .sign-up section .form-body .row {
+      #container .sign-up section .form-body .row,
+      #container .sign-in section .intro .row,
+      #container .sign-in section .form-body .row {
         overflow: hidden;
         width: 533px;
         margin: 0 0 8px;
@@ -226,7 +238,9 @@ body {
         padding-top: 2px;
         padding-left: 14px; }
         #container .sign-up section .intro .row input,
-        #container .sign-up section .form-body .row input {
+        #container .sign-up section .form-body .row input,
+        #container .sign-in section .intro .row input,
+        #container .sign-in section .form-body .row input {
           background: url("../images/signup-input.png") 0 0 no-repeat;
           border: 0;
           width: 242px;
@@ -243,13 +257,59 @@ body {
           font-weight: bold;
           display: block; }
           #container .sign-up section .intro .row input.required,
-          #container .sign-up section .form-body .row input.required {
+          #container .sign-up section .form-body .row input.required,
+          #container .sign-in section .intro .row input.required,
+          #container .sign-in section .form-body .row input.required {
             background: url("../images/signup-input-required.png") 0 0 no-repeat; }
           #container .sign-up section .intro .row input:focus,
-          #container .sign-up section .form-body .row input:focus {
+          #container .sign-up section .form-body .row input:focus,
+          #container .sign-in section .intro .row input:focus,
+          #container .sign-in section .form-body .row input:focus {
             background: url("../images/signup-input.png") 0 0 no-repeat; }
+        #container .sign-up section .intro .row label,
+        #container .sign-up section .form-body .row label,
+        #container .sign-in section .intro .row label,
+        #container .sign-in section .form-body .row label {
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #4a4a4a;
+          font-family: 'HelveticaRegular';
+          *font-family: 'Helvetica', 'Helvetica Neue';
+          font-weight: bold;
+          float: left;
+          text-align: right;
+          width: 105px;
+          padding: 9px 8px 9px 21px; }
+        #container .sign-up section .intro .row.remember,
+        #container .sign-up section .form-body .row.remember,
+        #container .sign-in section .intro .row.remember,
+        #container .sign-in section .form-body .row.remember {
+          padding-left: 145px; }
+          #container .sign-up section .intro .row.remember input,
+          #container .sign-up section .form-body .row.remember input,
+          #container .sign-in section .intro .row.remember input,
+          #container .sign-in section .form-body .row.remember input {
+            width: auto;
+            background: none; }
+          #container .sign-up section .intro .row.remember label,
+          #container .sign-up section .form-body .row.remember label,
+          #container .sign-in section .intro .row.remember label,
+          #container .sign-in section .form-body .row.remember label {
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            font-family: 'HelveticaRegular';
+            *font-family: 'Helvetica', 'Helvetica Neue';
+            font-weight: bold;
+            text-align: left;
+            padding: 1px 0;
+            width: auto; }
         #container .sign-up section .intro .row.textarea,
-        #container .sign-up section .form-body .row.textarea {
+        #container .sign-up section .form-body .row.textarea,
+        #container .sign-in section .intro .row.textarea,
+        #container .sign-in section .form-body .row.textarea {
           background: url("../images/signup-row-textarea.png") 1px center repeat-x;
           border-top: 1px solid #e5e5e5;
           margin-top: 2px;
@@ -258,7 +318,9 @@ body {
           padding-top: 8px;
           padding-bottom: 6px; }
           #container .sign-up section .intro .row.textarea textarea,
-          #container .sign-up section .form-body .row.textarea textarea {
+          #container .sign-up section .form-body .row.textarea textarea,
+          #container .sign-in section .intro .row.textarea textarea,
+          #container .sign-in section .form-body .row.textarea textarea {
             background: url("../images/signup-textarea.png") 0 0 no-repeat;
             width: 507px;
             height: 80px;
@@ -273,12 +335,14 @@ body {
             font-weight: bold;
             overflow: hidden;
             resize: none; }
-    #container .sign-up section footer {
+    #container .sign-up section footer,
+    #container .sign-in section footer {
       background: url("../images/signup-footer.png") 0 0 no-repeat;
       height: 35px;
       text-align: center;
       padding: 10px 0; }
-      #container .sign-up section footer input {
+      #container .sign-up section footer input,
+      #container .sign-in section footer input {
         border: 0;
         background: url("../images/signup-submit.png") 0 0 no-repeat;
         text-align: center;

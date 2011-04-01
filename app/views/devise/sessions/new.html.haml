@@ -1,0 +1,23 @@
+.sign-up
+  %header
+    %h2 Sign in
+    = link_to 'Main', :root, :class => 'logo'
+  %section
+    .intro
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      .form-body
+        .row
+          = f.label :email
+          = f.email_field :email
+        .row
+          = f.label :password
+          = f.password_field :password
+        .row.remember
+          - if devise_mapping.rememberable? 
+            = f.check_box :remember_me
+            = f.label :remember_me, :class => :checkbox
+      %footer
+        = f.submit "Sign in" 
+  .commented
+    = render :partial => "devise/shared/links" 
