@@ -16,6 +16,7 @@ group :test, :development do
   gem 'launchy', '0.3.7'
   gem 'ruby-debug'
   gem 'factory_girl_rails', '1.0'
+  gem 'sqlite3'
 
   gem 'pickle', '0.4.2'
   gem 'rspec', '2.0.1'
