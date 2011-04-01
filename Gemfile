@@ -5,6 +5,8 @@ gem 'mysql2'
 gem 'devise', '1.2.rc2'
 gem 'haml', '3.0.25'
 gem "jquery-rails"
+gem 'paperclip', '2.3.8'
+gem 'inherited_resources'
 
 group :test, :development do
   gem 'nifty-generators'

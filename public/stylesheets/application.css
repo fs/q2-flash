@@ -69,6 +69,9 @@ a {
   color: #0000FF;
   line-height: 16px; }
 
+p {
+  padding: 6px 0; }
+
 .clear {
   clear: both;
   height: 0;
@@ -131,22 +134,154 @@ a {
   .error_messages ul {
     margin: 0; }
 
+body {
+  background: #fff; }
+
+#container {
+  background: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+  #container .sign-up {
+    width: 550px;
+    height: 500px;
+    margin: 0 auto;
+    font-family: 'HelveticaRegular';
+    *font-family: 'Helvetica', 'Helvetica Neue';
+    font-size: 12px;
+    line-height: 18px;
+    color: #4a4a4a; }
+    #container .sign-up .commented {
+      display: none; }
+    #container .sign-up header {
+      background: url("../images/signup-header.png") 0 0 no-repeat;
+      height: 82px;
+      position: relative; }
+      #container .sign-up header h2 {
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        font-size: 27px;
+        line-height: 32px;
+        padding: 0; }
+      #container .sign-up header .logo {
+        position: absolute;
+        right: 16px;
+        bottom: 7px;
+        text-indent: -9999em;
+        text-align: left;
+        background: url("../images/logo-mini.png") 0 0 no-repeat;
+        height: 61px;
+        width: 79px; }
+    #container .sign-up section h3 {
+      font-size: 18px;
+      line-height: 24px;
+      padding-left: 15px; }
+    #container .sign-up section .intro,
+    #container .sign-up section .form-body {
+      padding: 8px 0 0 0;
+      background: url("../images/signup-body.png") 0 0 repeat-y;
+      overflow: hidden; }
+      #container .sign-up section .intro p,
+      #container .sign-up section .form-body p {
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 12px 10px 15px; }
+      #container .sign-up section .intro .row,
+      #container .sign-up section .form-body .row {
+        overflow: hidden;
+        width: 533px;
+        margin: 0 0 8px;
+        clear: both;
+        padding-top: 2px;
+        padding-left: 14px; }
+        #container .sign-up section .intro .row input,
+        #container .sign-up section .form-body .row input {
+          background: url("../images/signup-input.png") 0 0 no-repeat;
+          border: 0;
+          width: 242px;
+          height: 16px;
+          float: left;
+          margin-right: 7px;
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: uppercase;
+          padding: 9px 8px;
+          color: #4a4a4a;
+          font-family: 'HelveticaRegular';
+          *font-family: 'Helvetica', 'Helvetica Neue';
+          font-weight: bold;
+          display: block; }
+          #container .sign-up section .intro .row input.required,
+          #container .sign-up section .form-body .row input.required {
+            background: url("../images/signup-input-required.png") 0 0 no-repeat; }
+          #container .sign-up section .intro .row input:focus,
+          #container .sign-up section .form-body .row input:focus {
+            background: url("../images/signup-input.png") 0 0 no-repeat; }
+        #container .sign-up section .intro .row.textarea,
+        #container .sign-up section .form-body .row.textarea {
+          background: url("../images/signup-row-textarea.png") 1px center repeat-x;
+          border-top: 1px solid #e5e5e5;
+          margin-top: 2px;
+          margin-bottom: 0;
+          margin-left: 1px;
+          padding-top: 8px;
+          padding-bottom: 6px; }
+          #container .sign-up section .intro .row.textarea textarea,
+          #container .sign-up section .form-body .row.textarea textarea {
+            background: url("../images/signup-textarea.png") 0 0 no-repeat;
+            width: 507px;
+            height: 80px;
+            padding: 8px;
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            border: 0;
+            color: #4a4a4a;
+            font-family: 'HelveticaRegular';
+            *font-family: 'Helvetica', 'Helvetica Neue';
+            font-weight: bold;
+            overflow: hidden;
+            resize: none; }
+    #container .sign-up section footer {
+      background: url("../images/signup-footer.png") 0 0 no-repeat;
+      height: 35px;
+      text-align: center;
+      padding: 10px 0; }
+      #container .sign-up section footer input {
+        border: 0;
+        background: url("../images/signup-submit.png") 0 0 no-repeat;
+        text-align: center;
+        color: #fff;
+        width: 274px;
+        height: 31px;
+        text-transform: uppercase;
+        font-family: 'HelveticaRegular';
+        font-size: 12px;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer; }
+
 /* Users
 -------------------------------------------------------------------*/
-#users tr {
-  font-size: 16px;
-  border-bottom: 1px solid #444;
-  border-top: 1px solid #444; }
-  #users tr:hover {
-    background: #C3D9FF; }
-  #users tr td {
-    padding: 10px; }
-    #users tr td.email {
-      font-size: 18px; }
-    #users tr td.controls {
-      text-align: right; }
-      #users tr td.controls a {
-        color: #333; }
+table {
+  margin-top: 10px; }
+  table tr {
+    font-size: 16px;
+    border-bottom: 1px solid #444;
+    border-top: 1px solid #444; }
+    table tr:hover {
+      background: #C3D9FF; }
+    table tr td {
+      padding: 10px; }
+      table tr td.name {
+        font-size: 18px; }
+      table tr td.controls {
+        text-align: right; }
+        table tr td.controls a {
+          color: #333; }
 
 /* Auth
 -------------------------------------------------------------------*/
@@ -244,13 +379,13 @@ body {
           background: url("../images/signup-input.png") 0 0 no-repeat;
           border: 0;
           width: 242px;
-          height: 16px;
+          height: 15px;
           float: left;
           margin-right: 7px;
-          font-size: 12px;
-          line-height: 16px;
+          font-size: 11px;
+          line-height: 15px;
           text-transform: uppercase;
-          padding: 9px 8px;
+          padding: 10px 8px 10px;
           color: #4a4a4a;
           font-family: 'HelveticaRegular';
           *font-family: 'Helvetica', 'Helvetica Neue';
@@ -270,8 +405,8 @@ body {
         #container .sign-up section .form-body .row label,
         #container .sign-in section .intro .row label,
         #container .sign-in section .form-body .row label {
-          font-size: 12px;
-          line-height: 16px;
+          font-size: 11px;
+          line-height: 15px;
           text-transform: uppercase;
           color: #4a4a4a;
           font-family: 'HelveticaRegular';
@@ -280,7 +415,7 @@ body {
           float: left;
           text-align: right;
           width: 105px;
-          padding: 9px 8px 9px 21px; }
+          padding: 10px 8px 10px 21px; }
         #container .sign-up section .intro .row.remember,
         #container .sign-up section .form-body .row.remember,
         #container .sign-in section .intro .row.remember,
@@ -296,8 +431,8 @@ body {
           #container .sign-up section .form-body .row.remember label,
           #container .sign-in section .intro .row.remember label,
           #container .sign-in section .form-body .row.remember label {
-            font-size: 12px;
-            line-height: 16px;
+            font-size: 11px;
+            line-height: 15px;
             text-transform: uppercase;
             color: #4a4a4a;
             font-family: 'HelveticaRegular';
@@ -323,10 +458,10 @@ body {
           #container .sign-in section .form-body .row.textarea textarea {
             background: url("../images/signup-textarea.png") 0 0 no-repeat;
             width: 507px;
-            height: 80px;
-            padding: 8px;
-            font-size: 12px;
-            line-height: 16px;
+            height: 76px;
+            padding: 10px 8px;
+            font-size: 11px;
+            line-height: 15px;
             text-transform: uppercase;
             border: 0;
             color: #4a4a4a;

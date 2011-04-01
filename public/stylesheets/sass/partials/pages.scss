@@ -1,6 +1,7 @@
 /* Users
 -------------------------------------------------------------------*/
-#users {
+table {
+  margin-top:10px;
   tr {
     font-size:16px;
     border-bottom:1px solid #444;
@@ -11,7 +12,7 @@
     td {
       padding:10px;
   
-      &.email {
+      &.name {
         font-size:18px;
       }
       &.controls {

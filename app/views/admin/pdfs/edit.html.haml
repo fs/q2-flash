@@ -1,0 +1,6 @@
+= error_messages_for @pdf
+= form_for @pdf, :url => admin_brochure_pdf_path(@brochure, @pdf),
+  :html => {:multipart => true} do |form|
+  = render 'form', :form => form
+  %p
+    = form.submit 'Update'

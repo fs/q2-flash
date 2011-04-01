@@ -1,0 +1,12 @@
+%p
+  = form.label :brochure
+  = form.select :brochure_id, Brochure.all.map{|b| [b.name, b.id]}
+%p
+  = form.label :name
+  = form.text_field :name
+%p
+  = form.label :attachment
+  = form.file_field :attachment
+%p
+  = form.label :description
+  = form.text_area :description

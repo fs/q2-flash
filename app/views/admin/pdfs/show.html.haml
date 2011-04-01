@@ -1,0 +1,5 @@
+- title @pdf.name
+%p
+  = @pdf.description
+- if @pdf.attachment.exists?
+  = link_to 'Attachemnt', @pdf.attachment.url

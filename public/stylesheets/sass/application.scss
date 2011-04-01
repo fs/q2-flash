@@ -88,13 +88,13 @@ body { background: #fff; }
                         background: url("../images/signup-input.png") 0 0 no-repeat;
                         border: 0;
                         width: 242px;
-                        height: 16px;
+                        height: 15px;
                         float: left;
                         margin-right: 7px;
-                        font-size: 12px;
-                        line-height: 16px;
+                        font-size: 11px;
+                        line-height: 15px;
                         text-transform: uppercase;
-                        padding: 9px 8px;
+                        padding: 10px 8px 10px;
                         color: #4a4a4a;
                         font-family: 'HelveticaRegular';
                         *font-family: 'Helvetica', 'Helvetica Neue';
@@ -108,8 +108,8 @@ body { background: #fff; }
                         }
                     }
                     label {
-                        font-size: 12px;
-                        line-height: 16px;
+                        font-size: 11px;
+                        line-height: 15px;
                         text-transform: uppercase;
                         color: #4a4a4a;
                         font-family: 'HelveticaRegular';
@@ -118,7 +118,7 @@ body { background: #fff; }
                         float: left;
                         text-align: right;
                         width: 105px;
-                        padding: 9px 8px 9px 21px;                        
+                        padding: 10px 8px 10px 21px;                        
                     }                    
                     &.remember {
                         padding-left: 145px;
@@ -127,8 +127,8 @@ body { background: #fff; }
                             background: none;
                         }
                         label {
-                            font-size: 12px;
-                            line-height: 16px;
+                            font-size: 11px;
+                            line-height: 15px;
                             text-transform: uppercase;
                             color: #4a4a4a;
                             font-family: 'HelveticaRegular';
@@ -150,10 +150,10 @@ body { background: #fff; }
                         textarea {
                             background: url("../images/signup-textarea.png") 0 0 no-repeat;
                             width: 507px;
-                            height: 80px;
-                            padding: 8px;
-                            font-size: 12px;
-                            line-height: 16px;
+                            height: 76px;
+                            padding: 10px 8px;
+                            font-size: 11px;
+                            line-height: 15px;
                             text-transform: uppercase;
                             border: 0;
                             color: #4a4a4a;
@@ -190,5 +190,4 @@ body { background: #fff; }
         }
     }
 }
-
 
