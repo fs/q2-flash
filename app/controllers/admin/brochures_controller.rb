@@ -7,8 +7,10 @@ class Admin::BrochuresController < ApplicationController
       format.html
       format.xml do 
         render :xml => @brochures.to_xml(
-          :include => :pdf,
-          :only => [:name, :description, :created_at, :updated_at, :url]
+          :include => {
+            :pdfs => {:methods => :url}
+          },
+          :only => [:name, :description, :created_at, :updated_at]
         )
       end
     end
