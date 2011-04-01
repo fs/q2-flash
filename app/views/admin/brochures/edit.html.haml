@@ -1,0 +1,9 @@
+= form_for @brochure, :url => admin_brochure_path(@brochure) do |form|
+  %p
+    = form.label :name
+    = form.text_field :name
+  %p
+    = form.label :description
+    = form.text_area :description
+  %p
+    = form.submit 'Update'

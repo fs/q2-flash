@@ -19,6 +19,10 @@ a {
   line-height:16px;
 }
 
+p {
+  padding:6px 0;
+}
+
 .clear {
   clear: both;
   height: 0;
@@ -90,4 +94,145 @@ a {
   ul {
     margin: 0;
   }
+}
+body { background: #fff; }
+
+#container {
+    background: none;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    .sign-up {
+        width: 550px;
+        height: 500px;
+        margin: 0 auto;
+        font-family: 'HelveticaRegular';
+        *font-family: 'Helvetica', 'Helvetica Neue';
+        font-size: 12px;
+        line-height: 18px;
+        color: #4a4a4a; 
+        .commented {
+            display: none; 
+        }
+        header {
+            background: url("../images/signup-header.png") 0 0 no-repeat;
+            height: 82px;
+            position: relative;
+            h2 {
+                position: absolute;
+                left: 15px;
+                bottom: 10px;
+                font-size: 27px;
+                line-height: 32px;
+                padding: 0;
+            }
+            .logo {
+                position: absolute;
+                right: 16px;
+                bottom: 7px;
+                text-indent: -9999em;
+                text-align: left;
+                background: url("../images/logo-mini.png") 0 0 no-repeat;
+                height: 61px;
+                width: 79px;
+            }
+        }
+        section {
+            h3 {
+                font-size: 18px;
+                line-height: 24px;
+                padding-left: 15px;
+            }
+            .intro, 
+            .form-body {
+                padding: 8px 0 0 0;
+                background: url("../images/signup-body.png") 0 0 repeat-y;
+                overflow: hidden;
+                p {
+                    border-bottom: 1px solid #e5e5e5;
+                    padding: 0 12px 10px 15px;
+                }
+                .row {
+                    overflow: hidden;
+                    width: 533px;
+                    margin: 0 0 8px;
+                    clear: both;
+                    padding-top: 2px;
+                    padding-left: 14px;
+                    input {
+                        background: url("../images/signup-input.png") 0 0 no-repeat;
+                        border: 0;
+                        width: 242px;
+                        height: 16px;
+                        float: left;
+                        margin-right: 7px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        padding: 9px 8px;
+                        color: #4a4a4a;
+                        font-family: 'HelveticaRegular';
+                        *font-family: 'Helvetica', 'Helvetica Neue';
+                        font-weight: bold;
+                        display: block;
+                        &.required {
+                            background: url("../images/signup-input-required.png") 0 0 no-repeat;
+                        }
+                        &:focus {
+                            background: url("../images/signup-input.png") 0 0 no-repeat;
+                        }
+                    }
+                    &.textarea {
+                        background: url("../images/signup-row-textarea.png") 1px center repeat-x;
+                        border-top: 1px solid #e5e5e5;
+                        margin-top: 2px;
+                        margin-bottom: 0;
+                        margin-left: 1px;
+                        padding-top: 8px;
+                        padding-bottom: 6px;
+                        textarea {
+                            background: url("../images/signup-textarea.png") 0 0 no-repeat;
+                            width: 507px;
+                            height: 80px;
+                            padding: 8px;
+                            font-size: 12px;
+                            line-height: 16px;
+                            text-transform: uppercase;
+                            border: 0;
+                            color: #4a4a4a;
+                            font-family: 'HelveticaRegular';
+                            *font-family: 'Helvetica', 'Helvetica Neue';
+                            font-weight: bold;
+                            overflow: hidden;
+                            resize: none;                            
+                        }                      
+                    }
+                }
+            }
+
+            footer {
+                background: url("../images/signup-footer.png") 0 0 no-repeat;
+                height: 35px;
+                text-align: center;
+                padding: 10px 0;
+                input {
+                    border: 0;
+                    background: url("../images/signup-submit.png") 0 0 no-repeat;
+                    text-align: center;
+                    color: #fff;
+                    width: 274px;
+                    height: 31px;
+                    text-transform: uppercase;
+                    font-family: 'HelveticaRegular';
+                    font-size: 12px;
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }

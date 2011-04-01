@@ -1,0 +1,12 @@
+- title 'Brochures'
+%table#brochures
+  - @brochures.each do |brochure|
+    %tr
+      %td.name
+        = link_to brochure.name, admin_brochure_path(brochure)
+      %td.controls
+        = link_to 'edit', edit_admin_brochure_path(brochure)
+        = link_to 'delete', admin_brochure_path(brochure), :method => :delete,
+          :confirm => 'Are you sure?'
+
+= link_to 'add new brochure', new_admin_brochure_path, :class => :button

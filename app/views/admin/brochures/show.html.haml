@@ -1,0 +1,14 @@
+- title @brochure.name
+%p
+  = @brochure.description
+%table#brochures
+  - @brochure.pdfs.each do |pdf|
+    %tr
+      %td.name
+        = pdf.name
+      %td.controls
+        = link_to 'edit', edit_admin_brochure_pdf_path(@brochure, pdf)
+        = link_to 'delete', admin_brochure_pdf_path(@brochure, pdf), :method => :delete,
+          :confirm => 'Are you sure?'
+
+= link_to 'add new pdf', new_admin_brochure_pdf_path(@brochure), :class => :button

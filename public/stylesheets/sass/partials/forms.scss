@@ -6,9 +6,11 @@ form {
       display:inline;
     }
   }
+  textarea,
   input[type="text"],
   input[type="password"],
   input[type="email"] {
+    width:400px;
     margin-top:2px;
     margin-bottom:6px;
     border:none;
@@ -23,4 +25,13 @@ form {
       @include shadow(5px, #333);
     }
   }
+  textarea {
+    height:200px;
+  }
+}
+a.button {
+  display:inline-block;
+  font-size:16px;
+  padding:8px 0;
+  color:#333;
 }
