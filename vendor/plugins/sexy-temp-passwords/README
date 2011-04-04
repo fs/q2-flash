@@ -1,0 +1,33 @@
+SexyTempPasswords
+=================
+
+Installation (via git submodules):
+  
+  git submodule add git@github.com:sbraford/sexy-temp-passwords.git vendor/plugins/sexy_temp_passwords
+
+Installation (direct):
+
+  ./script/plugin install git@github.com:sbraford/sexy-temp-passwords.git
+
+For updates and/or any troubleshooting help:
+  http://shanti.railsblog.com -- shantibraford {at} gmail
+
+Usage
+=====
+
+SexyTempPassword.generate    # => 'foobar6923'
+
+Inspiration
+===========
+
+When Flickr was first starting out, when you invited a friend, it would automatically create a dummy "placeholder" account for them.
+
+They even provided a "sexy" password to your friend, not unlike the kind this plugin generates.  It was a small but nice extra touch.
+
+Credits
+=======
+
+This page for the dictionary file:
+http://www.outpost9.com/files/WordLists.html
+
+Copyright (c) 2007-2009 Shanti A. Braford, released under the MIT license

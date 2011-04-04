@@ -1,0 +1,17 @@
+defaults: &defaults
+  noreply: 'q2-flash@example.com'
+  host: 'q2-flash.heroku.com'
+  gmail:
+    domain: ''
+    user_name: ''
+    password: ''
+
+production:
+  <<: *defaults
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  

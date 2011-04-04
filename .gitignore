@@ -5,4 +5,5 @@ tmp/
 TAGS
 tags
 config/database.yml
+config/config.yml
 Gemfile.lock
